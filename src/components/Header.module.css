@@ -1,0 +1,30 @@
+/* frontend/src/components/Header.module.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav a {
+    margin: 0 16px;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .nav a:hover {
+    color: #007AFF;
+  }
+  

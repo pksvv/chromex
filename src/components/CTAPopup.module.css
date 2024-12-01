@@ -1,0 +1,59 @@
+/* frontend/src/components/CTAPopup.module.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #007AFF, #5856D6);
+    padding: 32px;
+    border-radius: 16px;
+    color: #fff;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .content p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 24px;
+    border: none;
+    margin-bottom: 24px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .subscribeButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #007AFF;
+    border: none;
+    border-radius: 24px;
+    transition:
+  
