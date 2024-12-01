@@ -1,6 +1,6 @@
 // frontend/src/app/api/capture/route.js
 import { NextResponse } from 'next/server';
-import puppeteer from 'puppeteer'; // Using puppeteer instead of puppeteer-core
+import puppeteer from 'puppeteer'; // Using puppeteer
 import sharp from 'sharp';
 
 export async function POST(request) {
@@ -16,9 +16,7 @@ export async function POST(request) {
   try {
     const browser = await puppeteer.launch({
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      // Uncomment the executablePath line if necessary, and provide the path to Chromium
-      // executablePath: '/usr/bin/chromium-browser', // For Linux
-      // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', // For MacOS
+      // executablePath: '/usr/bin/chromium-browser', // Uncomment and adjust if necessary
     });
 
     const page = await browser.newPage();
