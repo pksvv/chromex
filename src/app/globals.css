@@ -1,21 +1,64 @@
 /* frontend/src/app/globals.css */
 
-body {
-  font-family: var(--font-geist-sans), Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+@font-face {
+  font-family: 'San Francisco';
+  src: url('/fonts/sf-pro-display-regular.woff2') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-input {
-  padding: 8px;
-  width: 300px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+a {
+  color: #007AFF;
+  text-decoration: none;
 }
 
 button {
-  padding: 10px 20px;
+  font-family: inherit;
   cursor: pointer;
 }
 
-h2, h3 {
-  color: #333;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(90deg, #007AFF, #5856D6);
+  color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
 }
